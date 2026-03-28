@@ -6,10 +6,10 @@ terraform {
     }
   }
   backend "azurerm" {
-    resource_group_name = "Storagerg"
+    resource_group_name  = "Storagerg"
     storage_account_name = "taskboardstoragedimov"
-    container_name = "taskboardcontainer"
-    key = "terraform.tfstate"
+    container_name       = "taskboardcontainer"
+    key                  = "terraform.tfstate"
   }
 }
 

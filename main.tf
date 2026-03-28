@@ -5,6 +5,12 @@ terraform {
       version = "4.66.0"
     }
   }
+  backend "azurerm" {
+    resource_group_name = "Storagerg"
+    storage_account_name = "taskboardstoragedimov"
+    container_name = "taslboarcontainer"
+    key = "terraform.tfstate"
+  }
 }
 
 provider "azurerm" {
